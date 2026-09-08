@@ -6,22 +6,9 @@ namespace Lab1
         {
             bool answer = false;
 
-            if (a>0)
-            {
-                answer = true;
-            }
-            else
-            {
-                answer = false;
-            }
-            if (b>0)
-            {
-                answer = true;
-            }
-            else 
-            { 
-                answer = false;
-            }
+        
+         if (a>0 && b>0)
+            {  answer = true; }
                 return answer;
         }
         public bool Task2(double d)
