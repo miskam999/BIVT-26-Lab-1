@@ -6,19 +6,20 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+            if (d>0)
+            {
+                answer = true;
+            }
             return answer;
         }
         public bool Task2(int n)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (n%2==0)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -26,19 +27,28 @@ namespace Lab1
         {
             int answer = 0;
 
-            // code here
-
-            // end
-
+            if (a>b)
+            {
+                answer = a;
+            }
+            else
+            {
+                answer = b;
+            }
             return answer;
         }
         public double Task4(double d, double f)
         {
             double answer = 0;
 
-            // code here
-
-            // end
+            if (d*d>f*f)
+            {
+                answer= f;
+            }
+            else
+            {
+                answer = d;
+            }
 
             return answer;
         }
@@ -46,19 +56,24 @@ namespace Lab1
         {
             double answer = 0;
 
-            // code here
-
-            // end
-
+            if (x*x>1)
+            {
+                answer = 1;
+            }
+            else
+            {
+                answer = x;
+            }
             return answer;
         }
         public bool Task6(double x, double y, double r)
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            if (Math.Abs(x*x+y*y-r*r)<=1.0/400)
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -67,9 +82,22 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
+            int s = n*n;
+            if (s-n>2*n)
+            {
+                if (n%2==0)
+                {
+                    answer = true;
+                }
+                else
+                {
+                    return answer;
+                }
+            }
+            else
+            {
+                answer = true;
+            }
 
             return answer;
         }
@@ -77,10 +105,10 @@ namespace Lab1
         {
             bool answer = false;
 
-            // code here
-
-            // end
-
+            if (M%2==0 && M+T>=5 && L/10<=180)
+            {
+                answer = true;
+            }
             return answer;
         }
     }
